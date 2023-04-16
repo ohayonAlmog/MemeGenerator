@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meme Generator by Almog Ohayon</title>
+    <script src="https://kit.fontawesome.com/c261fbbdbb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="onInit()">
+    <header>
+        <div class="container"> 
+            <h1>Meme Generator</h1>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <section class="grid-container"> 
+            </section>
+
+            <section class="meme-container">
+                
+                <canvas class="canvas" ondragover="onDragOver(event)" ondrop="onDrop(event)"> 
+                </canvas>
+
+                <div class="txt-editor"> 
+                </div>
+                
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Almogs footer -->
+    </footer>
+
+    <script src="js/gallery-main.js"></script>
+    <script src="js/generator-main.js"></script> 
+    <script src="js/generator-util.js"></script> 
+    <script src="js/util.service.js"></script> 
+    <script src="js/upload-from-local.js"></script>
+    <script src="js/sharing-on-facebook.js"></script>
+</body>
+
+</html>
